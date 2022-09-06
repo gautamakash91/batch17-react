@@ -1,19 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Parent from './components/parent';
+import Parent from './newcomp/parent';
 import reportWebVitals from './reportWebVitals';
-import NumCheck from './components/typecheck';
-import Login from './components/login';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NumCheck />
+    <Parent />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+//1. state variables and props
+//2. onChange and onClick
+//3. map function
+//4. conditional rendering
+//5. object destructuring
