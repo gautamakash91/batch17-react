@@ -8,8 +8,14 @@ export default function Child(props) {
 
   const showLayout = (obj, index) => {
     return (
-      <div>{index} {obj.first_name} {obj.last_name}</div>
+      <div>{index} {obj.first_name} {obj.last_name}
+        <button onClick={() => { handleDelete(index) }}>X</button>
+      </div>
     )
+  }
+
+  const handleDelete = (index) => {
+    console.log(index);
   }
 
   return (
