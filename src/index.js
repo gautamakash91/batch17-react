@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import ArrayComp from './arrayfunctions/myarray';
 import './index.css';
 import Parent from './newcomp/parent';
 import reportWebVitals from './reportWebVitals';
@@ -8,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Parent />
+    <ArrayComp />
   </React.StrictMode>
 );
 
