@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import ArrayComp from './arrayfunctions/myarray';
 import './index.css';
-import Parent from './newcomp/parent';
+import Parent from './lifecycle/parent';
 import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <ArrayComp />
-  </React.StrictMode>
+  // <React.StrictMode>
+    <Parent />
+  // </React.StrictMode>
 );
 
 reportWebVitals();

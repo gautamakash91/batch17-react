@@ -9,6 +9,12 @@
 // Syntax:
 // array.function 
 import { useState } from "react"
+import {
+  Button,
+  TextField,
+  Icon
+} from "@mui/material";
+
 
 export default function ArrayComp() {
   const [arr, setArr] = useState([]);
@@ -54,9 +60,9 @@ export default function ArrayComp() {
         {arr.map(showArray)}
       </ol>
       <br />
-      <button onClick={handlePush}>push</button>
-      <button onClick={handlePop}>pop</button>
-      <button onClick={handleSplice}>splice</button>
+      <Button onClick={handlePush}>push</Button>
+      <Button variant="outlined" color="success" onClick={handlePop}>pop</Button>
+      <Button variant="contained" startIcon={<Icon>shopping_cart_checkout</Icon>} onClick={handleSplice}>splice</Button>
 
     </div>
   )
