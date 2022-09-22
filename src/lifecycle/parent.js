@@ -23,8 +23,8 @@ export default function Parent() {
       Hi this is parent {num1} - {num2}.
       <br />
       <button onClick={handleClick}> toggle </button>
-      <button onClick={increaseNum1}>increase num1</button>
-      <button onClick={increaseNum2}>increase num2</button>
+      {/* <button onClick={increaseNum1}>increase num1</button>
+      <button onClick={increaseNum2}>increase num2</button> */}
       <br />
       {showChild === true ? <Child num1={num1} num2={num2} /> : "when condition is false"}
     </div>
